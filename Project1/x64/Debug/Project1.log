@@ -1,0 +1,4 @@
+﻿  test19.c
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/PROFILE”规范)
+test1.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:REF”规范)
+  Project1.vcxproj -> D:\c语言考研\Project1\x64\Debug\Project1.exe
