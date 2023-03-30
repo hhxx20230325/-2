@@ -1,5 +1,79 @@
 #include<stdio.h>
 
+
+
+//函数指针的概念
+
+//void Print(char *str) {
+//	printf("%s\n",str);
+//}
+//int main() {
+//	void (*p)(char*) = Print;
+//	(*p)("hello bit");
+//	return 0;
+//}
+
+
+
+
+//数组指针  -指向数组的指针
+//函数指针  -只想函数的指针
+
+//int add(int x,int y) {
+//	int z = 0;
+//	z=x+y;
+//	return z;
+//}
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	int arr[10] = { 0 };
+//	int(*p)[10] = &arr;
+//	//printf("%d\n",add(a,b));
+//	//&函数名和函数名都是函数的地址
+//	//printf("%p\n",add);
+//	//printf("%p\n",&add);
+//	int(*pa)(int, int) = add;
+//	printf("%d\n",(*pa)(2,3));
+//
+//	return 0;
+//}
+
+
+//二维数组传参
+//void test(int a[3][5]) {}
+//void test(int a[][5]) {}
+//void test(int a[3][]) {}--err
+//void test(int *arr) {}-err
+//void test(int **arr) {}-err
+//void test1(int(*arr)[5]) {}
+//int main() {
+//	int arr[3][5] = { 0 };
+//
+//	test1(arr);
+//
+//	return 0;
+//}
+
+
+//void test(int arr[]) {}
+//void test(int arr[10]) {}
+//void test(int* arr) {}
+//
+//void test2(int *arr[20]) {}
+//void test2(int **arr) {}
+////数组参数，指针参数
+//int main() {
+//	int arr[10] = { 0 };
+//	int* arr2[20] = { 0 };
+//	test(arr);
+//	test2(arr2);
+//	return 0;
+//}
+
+
+
+
 //void print1(int arr[3][5],int x,int y) {
 //	for (int i = 0; i < x;i++) {
 //		for (int j = 0; j < y;j++) {
